@@ -1,5 +1,11 @@
 {% extends "layout.html" %}
-
 {% block body %}
 <p>This is the Unoffical Auckland FC website!</p>
+{% for i in names_urls %}
+{% if "static" in i %}
+<img src="{{i}}" width=20%></img>
+{% else %}
+<h1>{{i}}</h1>
+{% endif %}
+{% endfor %}
 {% endblock %}
