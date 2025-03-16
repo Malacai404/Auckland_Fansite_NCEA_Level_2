@@ -28,9 +28,21 @@ def home():
     for l in results:
         names_urls.extend(l)
     return render_template("index.html", names_urls=names_urls)
-@app.route('/admin')
-def admin():
-    return "<h1>Hello Admin!</h1>"
+@app.route('/team')
+def team():
+    return render_template("team.html")
+@app.route('/club')
+def club():
+    return render_template("club.html")
+@app.route('/sponsorships')
+def sponsorships():
+    return render_template("sponsorships.html")
+@app.route('/top_ten')
+def top_ten():
+    return render_template("top_ten.html")
+@app.route('/a_league_table')
+def a_league_table():
+    return render_template("a_league_table.html")
 
 if __name__ == "__main__":
     app.run(debug=True)

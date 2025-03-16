@@ -4,9 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Auckland FC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
     <link href="{{ url_for('static', filename='style.css')}}" rel="stylesheet" />
 </head>
 <body>
+    <div class="w3-top">
+    <div class="w3-bar w3-black">
+        <img src="static/images/AUCK_FC_BAD_LOGO_COLOR.png" alt="AFC Logo" width = 20%>
+    </div> 
+    <div class="w3-bar w3-black">
+        <a href="/" class="w3-bar-item w3-button w3-mobile" style="width:14.285714285%">Home</a>
+        <a href="team" class="w3-bar-item w3-button w3-mobile" style="width:14.285714285%">Our Team</a>
+        <a href="top_ten" class="w3-bar-item w3-button w3-mobile" style="width:14.285714285%">Top Ten</a>
+        <a href="a_league_table" class="w3-bar-item w3-button w3-mobile" style="width:14.285714285%">A-League Table</a>
+        <a href="club" class="w3-bar-item w3-button w3-mobile" style="width:14.285714285%">Club</a>
+        <a href="sponsorships" class="w3-bar-item w3-button w3-mobile" style="width:14.285714285%">Sponsorship</a>
+        <a href="/" class="w3-bar-item w3-button w3-mobile" style="width:14.285714285%">News</a>
+      </div> 
+    </div>
     {% block body %}
     {% endblock %}
 </body>

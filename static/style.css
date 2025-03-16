@@ -1,5 +1,10 @@
 body {
+    padding-top: 180px;
     background-color: beige;
+    font-family: "Righteous", sans-serif;
+}
+P {
+    padding-left: 20px;
 }
 .on_game {
    background-color: red  
@@ -8,8 +13,14 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 20%;
+    width: 10%;
 }
 h1 {
     text-align: center;
 }
+.righteous-regular {
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
